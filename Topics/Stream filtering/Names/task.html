@@ -1,0 +1,13 @@
+<h2>Names</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Suppose you have the following list:</p> 
+  <pre><code class="language-java">List&lt;String&gt; names = List.of("Patrick Ross", "Kelly Wood", "James Moore", "Janice Coleman", "Mary Carter");</code></pre> 
+  <p>What is the result of the following invocation?</p> 
+  <pre><code class="language-java">names.stream()
+        .filter(name -&gt; name.length() &lt; 12)
+        .filter(name -&gt; name.startsWith("J"))
+        .count();</code></pre>
+ </body>
+</html>
