@@ -38,3 +38,6 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 2022-06-15 18:24:48 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
 CREATE TABLE   COMPANY  (ID  INTEGER not NULL,  NAME  VARCHAR(255),  PRIMARY KEY ( id )) [42101-200]
+2022-06-16 07:14:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE   COMPANY  (ID  IDENTITY not NULL PRIMARY KEY,  NAME  VARCHAR(255) UNIQUE NOT NULL,  PRIMARY KEY ( id )) [42101-200]
